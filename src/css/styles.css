@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(51, 51, 51);
+}
+
+.snowfall {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.snow {
+  animation-name: snowfall;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  width: 5px;
+  height: 30px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
